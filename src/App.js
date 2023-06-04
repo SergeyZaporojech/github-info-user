@@ -35,13 +35,24 @@ const App = () => {
       </form>
       {userData && (
         <div className="info">
-          <h2>{userData.name}</h2>
-          <p>{userData.bio}</p>
-          <p>Followers: {userData.followers}</p>
-          <p>Following: {userData.following}</p>
-          <img src={userData.avatar_url} alt="User Avatar" />
-          <p>Public Repositories: {userData.public_repos}</p>
-          <p>Location: {userData.location}</p>
+          <div class="redZone">
+            <img src={userData.avatar_url} alt="User Avatar" />
+            </div>
+            <h2>{userData.name}</h2>          
+          <p>{userData.location}</p>
+          <p>email: {userData.email}</p>
+          <table>
+            <tr>
+              <th>{userData.followers}</th>
+              <th>{userData.following}</th>
+              <th>{userData.public_repos}</th>
+            </tr>
+            <tr>
+              <td>Followers</td>
+              <td>Following</td>
+              <td>Public Repositories</td>
+            </tr>
+          </table>
         </div>
       )}
     </div>

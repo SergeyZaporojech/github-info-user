@@ -29,8 +29,15 @@
   cursor: pointer;
 }
 
-.info {
-  margin-top: 20px;
+.info table{
+  margin: auto;
+}
+.info th{
+  font-size: 35px;
+}
+
+.info th,td {
+  width:30%;
 }
 
 .info h2 {
@@ -49,7 +56,6 @@
   margin-top: 10px;
 }
 
-/* Additional Colors */
 
 .container {
   background-color: #f4f4f4;
@@ -64,15 +70,19 @@
 }
 
 .button:hover {
-  background-color: #45a049;
+  background-color: #2e8432;
 }
 
 .info {
+  margin-top: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+.redZone{
+  background-color: red;
 }
 
 .info h2 {
